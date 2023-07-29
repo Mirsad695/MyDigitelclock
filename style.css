@@ -1,0 +1,177 @@
+/*@font-face {
+  font-family: mirsad;
+  src: url(/LibreBaskerville-Bold.ttf);
+}*/
+*{
+  margin: 0px ;
+  padding: 0px ;
+}
+.container{
+  width: 900px ;
+  height: 1750px;
+  margin: 20px auto 0px;
+  border: 25px groove deepskyblue;
+  
+}
+body{
+  background-color: black;
+  font-family: Baskerville;
+  color:white ;
+  font-weight:700;
+  flex-wrap: wrap ;
+}
+h1{
+  font-size: 90px ;
+  margin: 10px auto 60px;
+  text-align: center ;
+  text-transform: capitalize ;
+}
+h2{
+  font-size: 120px ;
+  text-align: center ;
+  text-transform: capitalize ;
+  margin: 40px auto 0px;
+  color: orangered;
+}
+h3{
+  text-align: center ;
+  font-family: mirsad ;
+  text-transform: capitalize ;
+  padding: 60px 0px 10px;
+  font-size: 60px;
+  font-family: Baskerville;
+  font-weight:700;
+  
+}
+h4{
+  text-align:center ;
+  font-family: mirsad ;
+  text-transform: capitalize ;
+  font-size: 40px;
+  font-family: Baskerville;
+  font-weight:700;
+}
+h5{
+  text-align: center ;
+  text-transform :capitalize ;
+  font-size: 40px ;
+  padding: 10px ;
+}
+.watch{
+  background-color: darkolivegreen;
+  width: 700px ;
+  height: 400px;
+  position: relative ;
+  margin: 0px auto ;
+  border-radius: 30px;
+  position: relative ;
+  box-shadow: 0px 0px 20px 10px white;
+}
+.watch::before{
+  content: "";
+  position: absolute ;
+  background: linear-gradient(45deg,white, orangered, white);
+  background-size: 200% 200%;
+  top: -20px;
+  right:-20px;
+  bottom: -20px;
+  left: -20px;
+  z-index: -1;
+  filter: blur(20px);
+  animation: mirsad 1s ease-in infinite ;
+}
+@keyframes mirsad{
+  0%
+  {
+    background-position: 0% 50%;
+  }
+  50%
+  {
+    background-position: 100% 50%;
+  }
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}
+
+.top{
+  height: 100px ;
+  width: 100%;
+  text-align: center ;
+  word-spacing: 20px ;
+}
+.left{
+  width: 400px ;
+  height: 300px;
+  float: left ;
+}
+.right{
+  width: 300px ;
+  height: 170px ;
+  float: right ;
+  box-sizing:border-box ;
+  overflow: hidden ;
+}
+.down{
+  height: 130px ;
+  width:  300px ;
+  float: right ;
+}
+#date{
+  font-size: 50px ;
+  line-height: 100px ;
+  margin-top: 100px ;
+  background: linear-gradient(45deg,blue,black,blue);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+ 
+}
+#hours{
+  font-size: 300px ;
+  margin-left:70px ;
+  line-height: 285px ;
+  background: linear-gradient(white,blue,white);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text ;
+}
+#dost{
+  font-size: 160px;
+  line-height: 150px ;
+  margin-right: 10px ;
+   
+
+}
+#minutes{
+  font-size: 130px ;
+  margin-right: 40px ;
+  background: linear-gradient(45deg,orangered,black);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text ;
+}
+#period{
+  text-transform: uppercase ;
+  font-size: 45px ;
+  color: springgreen;
+margin-left: 20px ;
+padding-right: 10px ;
+  display: inline-block ;
+  
+}
+#seconds{
+  font-size: 75px ;
+  display: inline-block ;
+}
+.img{
+  width: 700px ;
+  height: 400px ;
+  box-shadow: 0px 0px 0px 20px deepskyblue;
+  margin: 70px auto 0px;
+  border-radius: 50%;
+  
+}
+.img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
